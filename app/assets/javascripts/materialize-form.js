@@ -6,8 +6,8 @@ window.materializeForm = {
   },
   initSelect: function() {
     $('select[multiple="multiple"] option[value=""]').attr('disabled', true)
-    if (typeof $('select').material_select === "function") {
-      $('select').material_select()
+    if (typeof $('select').formSelect === "function") {
+      $('select').formSelect()
     } else {
       $('select').formSelect()
     }
